@@ -164,7 +164,7 @@ export function Overlay() {
           >
             <div className="w-full h-full bg-[#0E0E0E] relative overflow-hidden flex items-center justify-center">
               <img
-                src="/assets/dev prasad.png"
+                src="/assets/dev-prasad.png"
                 alt="Dev Prasath L"
                 className="w-full h-full object-cover object-top opacity-80 group-hover:opacity-100 transition-opacity duration-500"
               />
