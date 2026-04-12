@@ -67,7 +67,7 @@ export function Overlay() {
           // We pull the API access key directly from your .env file
           access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "YOUR_WEB3FORMS_ACCESS_KEY",
           subject: "New Signal from Portfolio",
-          from_name: "Portfolio Terminal",
+          from_name: formState.name || "Portfolio Terminal",
           ...formState
         }),
       });
@@ -518,6 +518,7 @@ export function Overlay() {
                   <label className="font-mono text-[10px] uppercase text-[#4DA6FF] opacity-40 tracking-widest">Identity_ID</label>
                   <input
                     type="text"
+                    name="name"
                     required
                     value={formState.name}
                     onChange={(e) => setFormState({ ...formState, name: e.target.value })}
@@ -529,6 +530,7 @@ export function Overlay() {
                   <label className="font-mono text-[10px] uppercase text-[#4DA6FF] opacity-40 tracking-widest">Signal_Address</label>
                   <input
                     type="email"
+                    name="email"
                     required
                     value={formState.email}
                     onChange={(e) => setFormState({ ...formState, email: e.target.value })}
@@ -540,6 +542,7 @@ export function Overlay() {
                   <label className="font-mono text-[10px] uppercase text-[#4DA6FF] opacity-40 tracking-widest">Transmission_Data</label>
                   <textarea
                     rows={4}
+                    name="message"
                     required
                     value={formState.message}
                     onChange={(e) => setFormState({ ...formState, message: e.target.value })}
