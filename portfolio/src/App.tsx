@@ -13,8 +13,6 @@ import { Scene } from './components/Scene';
 import { Navigation } from './components/Navigation';
 
 import { Overlay } from './components/Overlay';
-import { AICursor } from './components/AICursor';
-import { AIAssistant } from './components/AIAssistant';
 import { motion, AnimatePresence } from 'framer-motion';
 import Lenis from 'lenis';
 
@@ -71,8 +69,6 @@ export default function App() {
       <Scene />
       <Overlay />
       <Navigation />
-      <AICursor />
-      <AIAssistant />
     </main>
   );
 }
