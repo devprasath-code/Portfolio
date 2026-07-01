@@ -269,25 +269,25 @@ export function Overlay() {
               title: "AI EdTech",
               problem: "Student course providing platform with personal AI performance analyser.",
               tech: ["Python", "Firebase Auth", "AI Analytics"],
-              image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=800"
+              image: "/assets/project_edtech.png"
             },
             {
               title: "AI Startup Validator",
               problem: "Validating startup ideas using Next.js, React, AWS (Fast API), and PostgreSQL.",
               tech: ["Next.js", "React", "AWS", "PostgreSQL"],
-              image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800"
+              image: "/assets/project_validator.png"
             },
             {
               title: "Aura",
               problem: "Real-time music player and listener platform.",
               tech: ["React", "Web Audio API", "Realtime"],
-              image: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?auto=format&fit=crop&q=80&w=800"
+              image: "/assets/project_music.png"
             },
             {
               title: "AI Mental Health Analyser",
               problem: "24/7 AI human companion for mental health analysis.",
               tech: ["NLP", "Python", "Emotional AI"],
-              image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31?auto=format&fit=crop&q=80&w=800"
+              image: "/assets/project_mental_health.png"
             }
           ].map((project, i) => (
             <motion.div

@@ -11,6 +11,7 @@
 import { useState, useEffect } from 'react';
 import { Scene } from './components/Scene';
 import { Navigation } from './components/Navigation';
+import { Chatbot } from './components/Chatbot';
 
 import { Overlay } from './components/Overlay';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -69,6 +70,7 @@ export default function App() {
       <Scene />
       <Overlay />
       <Navigation />
+      <Chatbot />
     </main>
   );
 }

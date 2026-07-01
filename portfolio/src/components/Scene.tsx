@@ -42,7 +42,8 @@ export function Scene() {
           <Temple />
           <Particles count={1000} />
           
-          <Environment preset="night" />
+          <hemisphereLight intensity={0.2} color="#4DA6FF" groundColor="#000000" />
+          <directionalLight position={[5, 10, 5]} intensity={0.5} color="#4DA6FF" castShadow />
         </Suspense>
       </Canvas>
     </div>
